@@ -1,0 +1,191 @@
+body{
+    font-variant-caps: small-caps;
+    background-color: darkslategray;
+    
+    }
+.header{
+    font-variant-caps: small-caps;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    border: 2px solid white;
+    font-size: 50px
+    }
+.subheader{
+     font-size: 25px;
+    }
+.followupbg{
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: underline;
+    padding: 10px;
+    margin: auto;
+    width: 27%;
+    border: 2px solid white;
+    }
+.forms{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    border: 2px solid white;
+    word-wrap: break-word;
+    background-color: lightgray;
+    
+    }
+img{
+    width:75%;
+    height:50%;
+
+    }
+button{
+    font-variant-caps: small-caps;
+    margin: 0pt;
+    padding:5pt;
+    
+    align-content: center;
+    }
+
+input{
+    font-variant-caps: small-caps;
+    margin: 0pt;
+    padding:5pt;
+    
+    align-content: center;
+    color: black;
+    }
+#signoutBtn{
+    transition: 0.5s;
+    background-color: white;
+    }
+#signoutBtn:hover{
+    transition: 0.5s;
+    background-color: red;
+    color: white;
+    }
+    .box{
+        border: 2px solid white;
+        word-wrap: break-word;
+        background-color: lightgray;
+    }
+    .firstpage{
+        text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 30%;
+    border: 2px solid white;
+    word-wrap: break-word;
+    background-color: lightgray;
+    }
+    .container {
+        padding: 16px;
+      }
+      #gallery {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      #gallery img {
+        box-sizing: border-box;
+        width: 25%;
+        max-height: 25%;
+        padding: 5px;
+        
+        object-fit: cover;
+        
+      }
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+      }
+      
+      @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+      }
+      
+      @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+      }
+      
+      .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      .modal-header {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+      }
+      
+      .modal-body {padding: 2px 16px;}
+      
+      .modal-footer {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+      }
+      .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
