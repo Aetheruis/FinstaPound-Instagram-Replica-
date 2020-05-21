@@ -1,3 +1,4 @@
+<!-- front end of the login form -->
 <form action="PHP/login.php" method="POST">
     
         <p>Login</p>

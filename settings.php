@@ -7,8 +7,8 @@
 <div class="forms">
 Change your username:
     <br/>
-    <form action ="chU_name.php" method="POST">
-        <input type="textbox" name="chu_name" id="chu_name">
+    <form action ="changeUsername.php" method="POST">
+        <input type="textbox" name="changeUsername" id="changeUsername">
         <input type = "submit" value="SUBMIT" name= "submit">
     </form>
 </div>

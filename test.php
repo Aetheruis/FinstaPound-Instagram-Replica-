@@ -13,7 +13,6 @@
     
     ?>
     <div id="gallery">
-    Clearly it works now
     <?php
     
     $sql4 = "SELECT * FROM feeddata";

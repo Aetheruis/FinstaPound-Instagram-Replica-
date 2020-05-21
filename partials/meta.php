@@ -1,3 +1,4 @@
+<!-- meta information of the website -->
 <title>Finstapound</title>
 <meta charset="UTF-8">
 <meta name="author" content="Bernard">
