@@ -13,6 +13,7 @@
     
     ?>
     <div id="gallery">
+    This is a test to see if commit works.
     <?php
     
     $sql4 = "SELECT * FROM feeddata";
