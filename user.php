@@ -60,7 +60,7 @@
 
 <form action="uploadfeed.php" method="post" enctype="multipart/form-data">
         <input type="file" name="file" id="file1" required>
-        <input type="textbox" name="caption" id="caption1" required>
+        <input type="textbox" name="caption" id="caption1" placeholder="Caption" required>
         <input type="submit" value="Upload To Your Feed" name="submit1">
 </form>
 
