@@ -64,7 +64,7 @@ try {
         p_name VARCHAR(250) NOT NULL,
         post_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
         username VARCHAR(256),
-       
+        caption VARCHAR(256)
         )";
     
         $conn->exec($sql);
