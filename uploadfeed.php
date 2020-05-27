@@ -11,19 +11,12 @@ if ($_FILES["file"]["error"] > 0)
 echo "Error: " . $_FILES["file"]["error"] . "<br />";
 }
 
-try{
+
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $fpicture= $_FILES["file"]["name"];
+    $caption= $_POST['caption'];
     $username= $_SESSION['username'];
     
-    $sql = "INSERT INTO feeddata(p_name, username) VALUES($fpicture, $username)";
-    $stmt = $conn->prepare($sql);
-    $conn->exec($sql);
-    }
-    catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
 
 $target_dir = "feedpics/";
 $target_file = $target_dir . basename($_FILES["file"]["name"]);
@@ -65,13 +58,11 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 }
-
-try{
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $fpicture= $_FILES["file"]["name"];
-    $username= $_SESSION['username'];
+if ($fpicture!="") {
     
-    $sql = "INSERT INTO feeddata(p_name, username) VALUES('$fpicture', '$username')";
+try{
+    
+    $sql = "INSERT INTO feeddata(p_name, username, caption) VALUES('$fpicture', '$username', '$caption')";
     $stmt = $conn->prepare($sql);
     $conn->exec($sql);
     }
@@ -79,5 +70,7 @@ try{
     {
     echo $sql . "<br>" . $e->getMessage();
     }
-header("Location: feed.php");
+
+}
+header("Location: user.php");
 ?>
